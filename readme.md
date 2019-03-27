@@ -1,21 +1,25 @@
 # concirrus-code-test
 
-### Package Module into CJS Format
-This can now be included in another `rollup` built bundle.  
-Work on `es6/package.js`, and create with..
-    
-    npm run package
 
-### Testing bundle
-Work in `js/main` as usual
 
-    npm start
+Thanks for the opportunity. 
 
----
 
-### notes
-* `async.js` - allows css scripts to be loaded in async via the `link rel=preload as=style`
-* `ENV variables` are available, see `npm run production` and in `js/main.js`. Also `rollup.config.js` detects `ENV` and `uglifies` where applicable.
-* [eslint](http://eslint.org/docs/user-guide/configuring) check the manual for any issues with ES6
 
----
+I unfortunately had some time issues today such as having to start later than expected, as well as some other family duties which crept up, and with my eye on the time, I had a good 4 hours.
+
+As far as the JS goes, I am happy. 
+
+My CSS styles aren't at all taking advantage to all the lovely mixins we can generally deploy - and I had to write my styles as fast as poss to get the test in. There could have been a tonne of style enhancements, but ideally I like to ensure my app logic works correctly first.
+
+Mobile responsive - just makes it! It feels a bit hacky to me, and not to my usual standards.
+
+There may be a few parts of overkill in my boilerplate.
+
+But hopefully you see my love of Vue, and where it feels very natural to work with. 
+
+
+
+Regards,
+
+JC
