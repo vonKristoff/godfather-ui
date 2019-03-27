@@ -1,0 +1,6 @@
+.side-dashboard-component
+	header
+		.dashboard-logo
+	section
+		.employee-collection
+			employee-lite(v-for="item in collection" ":active"="view" ":model"="item" ":key"="item.key" @inspect-item="handleClick")

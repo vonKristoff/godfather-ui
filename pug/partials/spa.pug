@@ -1,1 +1,3 @@
 #root
+	side-dashboard(":collection"="dashboardCollection" @set-view="setPageView" ":view"="view")
+	page-content(v-if="showPageContent" ":model"="getCurrentTarget" @update-popularity="updatePopularity")

@@ -1,6 +1,12 @@
-body
-  margin 0 auto
-  maxWidth(_wBody)
 
 section
-  margin-top 4em
+  margin-top 2em
+
+#root
+	position relative
+	width 100%
+	height 100vh
+	overflow hidden
+	display flex
+	+mobile()
+		flex-direction column

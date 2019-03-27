@@ -1,0 +1,30 @@
+.side-dashboard-component
+  max-width 300px
+  width 100%  
+  +mobile()
+    max-width 100%
+    display flex
+    flex-direction row
+  .dashboard-logo
+    width 100%
+    height 25vh
+    background-image url('/_logo/the-godfather.svg')
+    background-position center
+    background-size cover
+    opacity .5
+  .employee-collection
+    display flex
+    flex-direction column
+    align-items center
+    span 
+      font-family _header
+    +mobile()
+      flex-direction column
+  section
+    margin 0
+    padding-top 2em
+    height 100%
+    background-color $color-dark
+    +mobile()
+      width 100%
+    

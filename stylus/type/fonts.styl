@@ -1,12 +1,11 @@
-_fontsource = "font/"
-_header = monospace
-_paragrph = sans-serif
+_fontsource = "/_font/"
+_header = "Roboto-Light"
+_paragraph = "Roboto-Regular"
 
 fontface(name)
   @font-face 
     font-family name
-    src url(_fontsource + name + '.eot')
-    src url(_fontsource + name + '.woff') format('woff'), url(_fontsource + name + '.ttf') format('truetype'), url(_fontsource + name + '.svg') format('svg')
+    src url(_fontsource + name + '.ttf') format('truetype')
     font-weight normal
     font-style normal
 
@@ -14,11 +13,11 @@ fontface(name)
  * Declare custom Font
  * fontface(_header)
  */
+ fontface("Roboto-Light")
+ fontface("Roboto-Regular")
 
 _minFont = 16
 _maxFont = 26  
 _minWidth = 320
 _maxWidth = 1280
 _difference = _maxFont - _minFont
-fluid()
-  font-size "calc(%s * ((100vw - %spx) / %s) + %s)" % (_maxFont _minWidth _maxWidth _minFont)

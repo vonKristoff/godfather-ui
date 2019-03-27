@@ -1,0 +1,14 @@
+transition(name="switch" mode="in-out")
+	.page-content-component(v-if="modelUpdated")
+		article
+			header
+				.box
+					.el-image(":style"="inlineBackgroundImage")
+				.box
+					.el-title
+						span {{ model.name }}
+					slider(":value"="model.popularity" name="popularity" min="1" max="5" @update-value="updatePopularity")
+			section
+				.article-body
+					h4 Biography
+					p {{ model.biography }}

@@ -1,15 +1,18 @@
-html
+html, body
   overflow-x hidden
   font-family _paragraph, helvetica, sans-serif
   font-size _base
-  color $grey
-  +wide()
-    font-size _wide
+  color $color-grey
+  background-image url("/_images/header.jpg")
+  background-size cover
+  background-repeat no-repeat
+  // +wide()
+  //   font-size _wide
   +desktop()
     font-size _desktop
+  +notebook()
+    font-size 16px
   +tablet()
-    font-size _tablet
-  +mobile-landscape()
-    font-size _mobile
+    font-size 14px
   +mobile()
-    font-size _mobile
+    font-size 12px

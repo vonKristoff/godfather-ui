@@ -1,0 +1,5 @@
+.slider-component
+	span {{ nameAsLabel }}
+	.field-input
+		label(":for"="name") 
+		input(":id"="name" type="range" ":min"="min" ":max"="max" v-model="model" @change="update")
