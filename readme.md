@@ -1,5 +1,10 @@
 # concirrus-code-test
 
+```
+npm install
+npm start // starts dev server @ localhost:3000
+```
+
 
 
 Thanks for the opportunity. 
